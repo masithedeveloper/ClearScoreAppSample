@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/scoreSummaryFragment">
+
+    <fragment
+        android:id="@+id/scoreSummaryFragment"
+        android:name="com.clearscore.report.ui.fragments.ScoreSummaryFragment"
+        android:label="Score Summary" />
+
+    <action
+        android:id="@+id/action_scoreSummaryFragment_to_scoreDetailFragment"
+        app:destination="@id/scoreDetailFragment">
+    </action>
+
+    <fragment
+        android:id="@+id/scoreDetailFragment"
+        android:name="com.clearscore.report.ui.fragments.ScoreDetailFragment"
+        android:label="Score Details">
+    </fragment>
+</navigation>
